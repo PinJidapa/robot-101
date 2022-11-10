@@ -1,0 +1,4 @@
+BASE:
+  BASE_URL: https://www.github.com/
+  CHROME_BROWSER: chrome
+  SAFARI_BROWSER: safari
