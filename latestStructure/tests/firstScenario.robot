@@ -9,7 +9,6 @@ Verify File Upload
     Choose File    ${UPLOAD.CHOOSE_FILE_ID}    ${UPLOAD.CHOOSE_FILE_URL}
     Click Element    id:file-submit
     Element Text Should Be    tag:h3    File Uploaded!
-    Element Text Should Be    id:uploaded-files    temp.jpg
 
 *** Test Cases ***
 Test Upload File
