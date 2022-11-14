@@ -5,7 +5,7 @@ Variables         ../variables/upload.yaml
 
 *** Keywords ***
 Go to Browser
-    Open Browser    ${UPLOAD.UPLOAD_URL}${UPLOAD.UPLOAD_PATH}    ${BASE.BROWSER}
+    Open Browser    ${BASE.BASE_URL}    ${BASE.BROWSER}
 
 Close the Browser
     Close Browser

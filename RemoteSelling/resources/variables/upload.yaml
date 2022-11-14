@@ -1,5 +1,0 @@
-UPLOAD:
-  UPLOAD_URL: https://the-internet.herokuapp.com/
-  UPLOAD_PATH: upload
-  CHOOSE_FILE_ID: id:file-upload
-  CHOOSE_FILE_URL: /Users/thinnapatmongkolthanachok/Downloads/temp.jpg

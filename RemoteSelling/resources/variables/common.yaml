@@ -1,3 +1,3 @@
 BASE:
-  BASE_URL: https://www.github.com/
+  BASE_URL: https://frontend-az.uat.krungthai-axa.co.th/advisors/quote/portal
   BROWSER: chrome
