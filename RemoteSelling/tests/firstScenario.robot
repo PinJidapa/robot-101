@@ -5,6 +5,7 @@ Variables         ../resources/variables/MenuPage.yaml
 
 *** Keywords ***
 Verify File Upload
+    Wait Until Element Is Visible    ${MENU.AZ_TITLE}
     Click Element    ${MENU.REMOTE_SELLING_BTN}
 
 *** Test Cases ***

@@ -1,46 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0 (Python 3.9.6 on darwin)" generated="20221114 21:11:21.702" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0 (Python 3.9.6 on darwin)" generated="20221114 22:46:17.515" rpa="false" schemaversion="3">
 <suite id="s1" name="firstScenario" source="/Users/pinpinn/robot-101/RemoteSelling/tests/firstScenario.robot">
-<test id="s1-t1" name="Test Upload File" line="11">
+<test id="s1-t1" name="Test Upload File" line="12">
 <kw name="Go to Browser" library="keywords">
 <kw name="Open Browser" library="Selenium2Library">
 <arg>${BASE.BASE_URL}</arg>
 <arg>${BASE.BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221114 21:11:21.966" level="INFO">Opening browser 'chrome' to base url 'https://frontend-az.uat.krungthai-axa.co.th/advisors/quote/portal'.</msg>
-<status status="PASS" starttime="20221114 21:11:21.965" endtime="20221114 21:11:42.580"/>
+<msg timestamp="20221114 22:46:17.766" level="INFO">Opening browser 'chrome' to base url 'https://frontend-az.uat.krungthai-axa.co.th/advisors/quote/portal'.</msg>
+<status status="PASS" starttime="20221114 22:46:17.765" endtime="20221114 22:46:36.361"/>
 </kw>
-<status status="PASS" starttime="20221114 21:11:21.964" endtime="20221114 21:11:42.585"/>
+<status status="PASS" starttime="20221114 22:46:17.765" endtime="20221114 22:46:36.361"/>
 </kw>
 <kw name="Verify File Upload">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${MENU.AZ_TITLE}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221114 22:46:36.362" endtime="20221114 22:46:38.598"/>
+</kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${MENU.REMOTE_SELLING_BTN}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221114 21:11:42.602" level="INFO">Clicking element 'data:id:remote-selling'.</msg>
-<msg timestamp="20221114 21:11:42.980" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20221114 21:11:42.980" level="FAIL">Element with locator 'data:id:remote-selling' not found.</msg>
-<status status="FAIL" starttime="20221114 21:11:42.590" endtime="20221114 21:11:42.986"/>
+<msg timestamp="20221114 22:46:38.599" level="INFO">Clicking element 'xpath://*[contains(text(),'Remote Selling')]'.</msg>
+<status status="PASS" starttime="20221114 22:46:38.598" endtime="20221114 22:46:39.016"/>
 </kw>
-<status status="FAIL" starttime="20221114 21:11:42.587" endtime="20221114 21:11:42.987"/>
+<status status="PASS" starttime="20221114 22:46:36.361" endtime="20221114 22:46:39.016"/>
 </kw>
 <kw name="Close the Browser" library="keywords">
-<status status="NOT RUN" starttime="20221114 21:11:42.987" endtime="20221114 21:11:42.987"/>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221114 22:46:39.017" endtime="20221114 22:46:39.134"/>
 </kw>
-<status status="FAIL" starttime="20221114 21:11:21.964" endtime="20221114 21:11:42.987">Element with locator 'data:id:remote-selling' not found.</status>
+<status status="PASS" starttime="20221114 22:46:39.017" endtime="20221114 22:46:39.134"/>
+</kw>
+<status status="PASS" starttime="20221114 22:46:17.764" endtime="20221114 22:46:39.135"/>
 </test>
-<status status="FAIL" starttime="20221114 21:11:21.704" endtime="20221114 21:11:42.989"/>
+<status status="PASS" starttime="20221114 22:46:17.517" endtime="20221114 22:46:39.136"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="firstScenario">firstScenario</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="firstScenario">firstScenario</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20221114 21:11:21.962" level="ERROR">Error in file '/Users/pinpinn/robot-101/RemoteSelling/resources/keywords/keywords.robot' on line 4: Variable file '../variables/upload.yaml' does not exist.</msg>
+<msg timestamp="20221114 22:46:17.762" level="ERROR">Error in file '/Users/pinpinn/robot-101/RemoteSelling/resources/keywords/keywords.robot' on line 4: Variable file '../variables/upload.yaml' does not exist.</msg>
 </errors>
 </robot>

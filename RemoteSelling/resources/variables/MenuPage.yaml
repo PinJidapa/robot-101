@@ -1,3 +1,4 @@
 MENU:
-  REMOTE_SELLING_BTN: data:id:remote-selling
+  REMOTE_SELLING_BTN:  xpath://*[contains(text(),'Remote Selling')]
+  AZ_TITLE:  xpath://*[contains(text(),'บริการต่างๆ จากกรุงไทย-แอกซ่า')]
 
