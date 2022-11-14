@@ -1,0 +1,3 @@
+LOGIN:
+  LOGIN_HEADER: id:kc-header-wrapper
+  LOGIN_OPTION: xpath://body/div[@id='kc-container']/div[@id='kc-container-wrapper']/div[@id='kc-content']/div[@id='kc-content-wrapper']/div[@id='kc-info']/div[@id='kc-info-wrapper']/div[1]/div[1]/div[1]

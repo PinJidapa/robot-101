@@ -1,7 +1,6 @@
 *** Settings ***
 Library           Selenium2Library
-Variables         ../variables/common.yaml
-Variables         ../variables/upload.yaml
+Variables         ../variables/Common.yaml
 
 *** Keywords ***
 Go to Browser
