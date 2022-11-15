@@ -11,7 +11,7 @@ Go to remote selling
     ${handles}= Get Window Handles
     Switch Window   ${handles}[1]
     Wait Until Element Is Visible   ${LOGIN.LOGIN_HEADER}
-    Click Element   ${LOGIN.LOGIN_OPION}
+    Click Element   ${LOGIN.LOGIN_BTN}
 *** Test Cases ***
 Test Upload File
     Go to Browser
