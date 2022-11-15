@@ -8,7 +8,7 @@ Variables         ../resources/variables/Login.yaml
 Go to remote selling
     Wait Until Element Is Visible   ${MENU.AZ_TITLE}
     Click Element   ${MENU.REMOTE_SELLING_BTN}
-    ${handles}= Get Window Handles
+    ${handles}=  Get Window Handles
     Switch Window   ${handles}[1]
     Wait Until Element Is Visible   ${LOGIN.LOGIN_HEADER}
     Click Element   ${LOGIN.LOGIN_BTN}
